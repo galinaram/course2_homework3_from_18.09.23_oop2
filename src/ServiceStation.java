@@ -1,4 +1,5 @@
-public class ServiceStation {
+public class ServiceStation implements CheckService{
+    @Override
     public void check(Car car, Bicycle bicycle, Truck truck) {
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -20,4 +21,8 @@ public class ServiceStation {
             }
         }
     }
+
+
+
+
 }
